@@ -6,7 +6,7 @@ let router = express.Router();
 let initTestRoute = (app) => {
     router.get("/", testController.test)
 
-    return app.use("/", router);
+    return app.use("/test", router);
 };
 
 export default initTestRoute;

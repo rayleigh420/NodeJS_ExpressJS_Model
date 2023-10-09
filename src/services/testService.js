@@ -1,8 +1,10 @@
-let test = async (data) => {
+let getTest = async (data) => {
     return new Promise(async (resolve, reject) => {
         try {
-            let str = data + "Le Nhat Duy"
-            resolve(str)
+            resolve({
+                id: Math.random(),
+                name: data + "Le Nhat Duy"
+            })
         } catch (e) {
             console.log(e)
         }
@@ -10,5 +12,5 @@ let test = async (data) => {
 }
 
 module.exports = {
-    test
+    getTest
 }

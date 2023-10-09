@@ -1,5 +1,4 @@
 import express from "express"
-import initTestRoute from './routes/testRoute'
 import initRoutes from './routes/routes'
 require('dotenv').config()
 
