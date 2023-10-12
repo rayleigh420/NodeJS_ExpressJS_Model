@@ -4,7 +4,7 @@ require('dotenv').config()
 const sequelize = new Sequelize('web-advanced', 'root', null, {
   host: 'localhost',
   dialect: 'mysql' /* one of 'mysql' | 'postgres' | 'sqlite' | 'mariadb' | 'mssql' | 'db2' | 'snowflake' | 'oracle' */,
-  logging: false
+  logging: false,
 });
 
 let connectDB = async () => {

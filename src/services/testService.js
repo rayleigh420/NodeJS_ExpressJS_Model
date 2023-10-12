@@ -1,10 +1,10 @@
+const db = require("../models")
+
 let getTest = async (data) => {
     return new Promise(async (resolve, reject) => {
         try {
-            resolve({
-                id: Math.random(),
-                name: data + "Le Nhat Duy"
-            })
+            const result = await db.Actor.findAll();
+            resolve(result)
         } catch (e) {
             console.log(e)
         }
