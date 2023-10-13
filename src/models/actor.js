@@ -16,6 +16,7 @@ module.exports = (sequelize, DataTypes) => {
     Actor.init({
         actor_id: {
             type: DataTypes.INTEGER,
+            autoIncrement: true,
             primaryKey: true
         },
         first_name: DataTypes.STRING,
